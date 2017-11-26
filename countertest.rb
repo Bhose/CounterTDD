@@ -22,11 +22,38 @@ class TestCounter < Minitest::Test
 	# 	assert_equal(true, counting(2))
 	# end
 
-	def test_assert_that_wombat_is_rejected
-		assert_equal(false, counting("wombat"))
+	# def test_assert_that_wombat_is_rejected
+	# 	assert_equal(false, counting("wombat"))
+	# end
+
+	# def test_assert_that_counter_ar_values_are_divisible_by_20
+	# 	assert_equal(true, counting(20))
+	# end
+
+	# def test_assert_that_counter_ar_values_are_divisible_by_100
+	# 	assert_equal(true, counting(100))
+	# end
+
+	# def test_assert_that_position_999_is_1000
+	# 	assert_equal(1000, counting(999))
+	# end
+
+	# def test_assert_that_position_0_is_2
+	# 	assert_equal(0, counting(2))
+	# end
+
+	def test_assert_that_position_0_is_2
+		position_number = 0
+		value = 2
+		assert_equal(true, testArray(position_number, value))
 	end
 
-	def test_assert_that_counter_ar_values_are_divisible_by_20
-		assert_equal(true, counting(20))
+	def test_assert_that_array_length_is_10
+		assert_equal(10, counting(2))
 	end
+
+
+
+
+
 end
