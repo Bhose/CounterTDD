@@ -9,9 +9,10 @@ def counterClass (test_number)
 end
 
 def counting (test_number)
+	counter = test_number
 	10.times do
-		$counterAr.push(test_number)
-		test_number += test_number
+		$counterAr.push(counter)
+		counter += test_number
 end
 puts $counterAr
 	if $counterAr.last % 5 == 0
