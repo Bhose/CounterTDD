@@ -1,4 +1,4 @@
-$counterAr = []
+$counterAr = *(1..1000)
 
 def counterArClass ()
 	$counterAr.class
