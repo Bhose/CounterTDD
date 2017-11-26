@@ -21,4 +21,8 @@ class TestCounter < Minitest::Test
 	def test_assert_that_counter_ar_values_are_divisible_by_2
 		assert_equal(true, counting(2))
 	end
+
+	def test_assert_that_wombat_is_rejected
+		assert_equal(false, counting("wombat"))
+	end
 end
